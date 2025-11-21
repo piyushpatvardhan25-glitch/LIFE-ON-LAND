@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life on land | plant a new tree </title>
+  <link rel="stylesheet" href="externalstyle.css">
+</head>
+<body>
+
+<video autoplay muted loop id="bg-video">
+    <source src="video.mp4" type="video/mp4">
+</video>
+
+
+<header>
+    <h1>Life on land</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam dignissimos, soluta explicabo consectetur nemo nisi a ad natus alias perferendis iusto voluptatem ipsa tenetur et praesentium cum eveniet voluptatibus omnis!</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="newpage.html">Progress</a>
+    <A href="newpage2.html">Plant a New Tree!</A>  
+</nav>
+
+        <div class="form-section">
+            <h2>🌱 Plant a New Tree!</h2>
+            <p>Fill this form to add your tree to our garden:</p>
+
+            <label>Your Name:</label>
+            <input type="text" id="planterName" placeholder="Enter your name" required />
+
+            <label>Type of Tree:</label>
+            <select id="treeType">
+                <option value="Mango Tree">Mango Tree</option>
+                <option value="Neem Tree">Neem Tree</option>
+                <option value="Coconut Tree">Coconut Tree</option>
+                <option value="Banyan Tree">Banyan Tree</option>
+                <option value="Peepal Tree">Peepal Tree</option>
+                <option value="Gulmohar">Gulmohar</option>
+            </select>
+
+            <label>Location (Area/Block):</label>
+            <input type="text" id="treeLocation" placeholder="e.g. Park Block A" required />
+
+            <button onclick="plantNewTree()">🌳 Plant This Tree!</button>
+        </div>
+</body>
+</html>
